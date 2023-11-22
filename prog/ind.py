@@ -3,17 +3,17 @@
 
 if __name__ == "__main__":
 
-    A = {"b","d","l","p"}
-    B = {"b", "d", "e", "l", "p", "x"}
-    C = {"k", "l", "p", "t"}
-    D = {"d", "k", "o", "p", "q", "u", "v"}
+    a = {"b","d","l","p"}
+    b = {"b", "d", "e", "l", "p", "x"}
+    c = {"k", "l", "p", "t"}
+    d = {"d", "k", "o", "p", "q", "u", "v"}
 
-    U = A.union(B).union(C).union(D)
+    u = a.union(b).union(c).union(d)
 
-    nB = U.difference(B)
+    nb = u.difference(b)
 
-    X = (A.difference(B)).intersection(C.union(D))
+    x = (a.difference(b)).intersection(c.union(d))
 
-    Y = (A.intersection(nB)).union(C.difference(D))
+    y = (a.intersection(nb)).union(c.difference(d))
 
-    print(f"X = {X}, Y = {Y}")
+    print(f"X = {x}, Y = {y}")
