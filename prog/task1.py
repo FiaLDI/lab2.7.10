@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == "__main__":
-    a = input("Введите строку ")
+    input_string = input("Введите строку ")
 
-    k = 0
+    count_of_vowels = 0
 
-    s = set("ауоыиэяюёе")
+    vowels = set("ауоыиэяюёе")
     
-    for i in a:
-        if i in s:
-            k += 1
-    print("Количество гласных:", k)
+    for i in input_string.lower():
+        if i in vowels:
+            count_of_vowels += 1
+    print("Количество гласных:", count_of_vowels)

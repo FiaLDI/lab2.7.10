@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == "__main__":
-    a = input("Введите первую строку ")
+    first_string = input("Введите первую строку ")
+    second_string = input("Введите вторую строку ")
 
-    b = input("Введите вторую строку ")
+    common_syms = set(first_string).intersection(set(second_string))
 
-    print(set(a).intersection(set(b)))
+    print(common_syms)
